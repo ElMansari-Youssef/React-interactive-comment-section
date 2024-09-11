@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --Moderate-blue: hsl(238, 40%, 52%);
+    --Soft-Red: hsl(358, 79%, 66%);
+    --Light-grayish-blue: hsl(239, 57%, 85%);
+    --Pale-red: hsl(357, 100%, 86%);
+
+    --Dark-blue: hsl(212, 24%, 26%);
+    --Grayish-Blue: hsl(211, 10%, 45%);
+    --Light-gray: hsl(223, 19%, 93%);
+    --Very-light-gray: hsl(228, 33%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Poppins, sans-serif;
+    background-color: var(--Light-grayish-blue);
+    margin: 10px;
+
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* SROCE START */
+
+.scoreContainer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    background-color: var(--Light-gray);
+    border-radius: 6px;
+    /* height: 80px; */
+}
+
+/* SROCE END */
+
+
+/* HEADER START - contains some of AddCommentContainer styles */
+
+.ImgUsernameCreatedAtContainer {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ImgUsernameCreatedAtContainer img,
+.AddCommentContainer img {
+    width: 40px;
+    height: 40px;
+}
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HeaderContainer button,
+.AddCommentContainer button {
+
+    color: var(--Moderate-blue);
+    font-weight: 600;
+    padding: 9px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.HeaderContainer button:hover,
+.AddCommentContainer button:hover {
+    cursor: pointer;
+    background-color: var(--Moderate-blue);
+    color: white;
+}
+
+.ImgUsernameCreatedAtContainer .Username {
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+.ImgUsernameCreatedAtContainer .CreatedAt {
+    color: var(--Grayish-Blue);
+}
+
+/* HEADER END */
+
+/* CommentBox Start */
+
+.replies2 {
+
+    width: 70%;
+
+}
+
+.HeaderAndCommentStyle {
+    display: flex;
+    flex-direction: column;
+}
+
+.CommentBoxStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 2rem;
+    width: 50%;
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.CommentContainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+/* CommentBox END */
+
+
+/* Add Comment Start */
+
+.AddCommentContainer {
+
+    display: flex;
+    width: 50%;
+    /* justify-content: space-; */
+    padding: 1.5rem;
+    background-color: white;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.AddCommentContainer textarea {
+    height: 8rem;
+    font-size: 16px;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+
+/* Add Comment END */

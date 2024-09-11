@@ -1,0 +1,4 @@
+Terminal Commands:
+
+to host  json file in a local server : npx json-server --watch data/data.json --port 8000
+to creat a new react project:	     npx create-react-app nameOfProject 
